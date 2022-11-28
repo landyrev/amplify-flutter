@@ -10,7 +10,11 @@ environment:
   flutter: ">=3.0.0"
 
 dependencies:
-  amplify_core: ">=1.0.0-next.1 <1.0.0-next.2"
+  amplify_core:
+    git:
+      url: https://github.com/landyrev/amplify-flutter
+      ref: savvynavvy
+      path: packages/amplify_core
   collection: ^1.15.0
   flutter:
     sdk: flutter

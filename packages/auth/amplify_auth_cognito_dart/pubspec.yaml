@@ -9,7 +9,11 @@ environment:
   sdk: ">=2.17.0 <3.0.0"
 
 dependencies:
-  amplify_core: ">=1.0.0-next.1 <1.0.0-next.2"
+  amplify_core:
+    git:
+      url: https://github.com/landyrev/amplify-flutter
+      ref: savvynavvy
+      path: packages/amplify_core
   amplify_secure_storage_dart: ">=0.1.3 <0.2.0"
   async: ^2.8.0
   aws_common: ">=0.3.2 <0.4.0"
@@ -48,6 +52,6 @@ dev_dependencies:
     path: ../../worker_bee/worker_bee_builder
 
 flutter:
-  assets:
-  - lib/src/workers/workers.min.js
-  - lib/src/workers/workers.min.js.map
+  # assets:
+  # - lib/src/workers/workers.min.js
+  # - lib/src/workers/workers.min.js.map

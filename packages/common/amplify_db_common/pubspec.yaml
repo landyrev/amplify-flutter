@@ -10,7 +10,11 @@ environment:
   flutter: ">=3.0.0"
 
 dependencies:
-  amplify_db_common_dart: ">=0.1.1 <0.2.0"
+  amplify_db_common_dart:
+    git:
+      url: https://github.com/landyrev/amplify-flutter
+      ref: savvynavvy
+      path: packages/common/amplify_db_common_dart
   drift: ^2.0.0
   flutter:
     sdk: flutter

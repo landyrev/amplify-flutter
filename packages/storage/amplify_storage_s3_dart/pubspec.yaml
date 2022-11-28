@@ -9,8 +9,16 @@ environment:
   sdk: '>=2.17.0 <3.0.0'
 
 dependencies:
-  amplify_core: ">=1.0.0-next.1 <1.0.0-next.2"
-  amplify_db_common_dart: ">=0.1.1 <0.2.0"
+  amplify_core:
+    git:
+      url: https://github.com/landyrev/amplify-flutter
+      ref: savvynavvy2
+      path: packages/amplify_core
+  amplify_db_common_dart:
+    git:
+      url: https://github.com/landyrev/amplify-flutter
+      ref: savvynavvy2
+      path: packages/common/amplify_db_common_dart
   async: ^2.8.0
   aws_common: ">=0.3.2 <0.4.0"
   aws_signature_v4: ">=0.3.0 <0.4.0"

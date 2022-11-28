@@ -19,9 +19,21 @@ platforms:
   web:
 
 dependencies:
-  amplify_core: ">=1.0.0-next.1 <1.0.0-next.2"
-  amplify_db_common: ">=0.1.1 <0.2.0"
-  amplify_storage_s3_dart: ">=0.1.1 <0.2.0"
+  amplify_core:
+    git:
+      url: https://github.com/landyrev/amplify-flutter
+      ref: savvynavvy2
+      path: packages/amplify_core
+  amplify_db_common:
+    git:
+      url: https://github.com/landyrev/amplify-flutter
+      ref: savvynavvy2
+      path: packages/common/amplify_db_common
+  amplify_storage_s3_dart:
+    git:
+      url: https://github.com/landyrev/amplify-flutter
+      ref: savvynavvy2
+      path: packages/storage/amplify_storage_s3_dart
   aws_common: ">=0.3.2 <0.4.0"
   flutter:
     sdk: flutter

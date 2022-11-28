@@ -12,9 +12,9 @@ pubspec.lock
 doc/
 
 # JS outputs
-*.js
-*.js.map
-*.js.deps
+# *.js
+# *.js.map
+# *.js.deps
 
 doc/api
 coverage/
